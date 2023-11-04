@@ -1,0 +1,6 @@
+@import url(./components/AirConditions/AirConditions.css);
+@import url(./components/App/App.css);
+@import url(./components/CurrentWeather/CurrentWeather.css);
+@import url(./components/DailyWeather/DailyWeather.css);
+@import url(./components/SearchBar/SearchBar.css);
+@import url(./components/WeeklyWeather/WeeklyWeather.css);
