@@ -1,0 +1,14 @@
+html {
+  background-color: rgb(51, 51, 90);
+}
+
+.page {
+  display: flex;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
