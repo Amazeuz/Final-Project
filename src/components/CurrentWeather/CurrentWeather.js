@@ -8,10 +8,10 @@ export default function currentWeather() {
 
   return (
     <div className="current-weather">
-      <img className="current-weather__weather-condition" src={climateImages[currentCity.condition]} />
+      <p className="current-weather__temperature">{currentCity.temp} &#8451;</p>
       <div className="current-weather__container">
         <h1 className="current-weather__city-name">{currentCity.city}</h1>
-        <p className="current-weather__temperature">{currentCity.temp}</p>
+        <img className="current-weather__weather-condition" src={climateImages[currentCity.condition]} />
       </div>
       {currentCity.currently == 'noite' && <img className="current-weather__moon-phase" src={moonPhasesImages[currentCity.moon_phase]} />}
     </div>
