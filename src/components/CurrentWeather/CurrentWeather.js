@@ -13,7 +13,7 @@ export default function currentWeather() {
         <h1 className="current-weather__city-name">{currentCity.city}</h1>
         <p className="current-weather__temperature">{currentCity.temp}</p>
       </div>
-      <img className="current-weather__moon-phase" src={moonPhasesImages[currentCity.moon_phase]} />
+      {currentCity.currently == 'noite' && <img className="current-weather__moon-phase" src={moonPhasesImages[currentCity.moon_phase]} />}
     </div>
   )
 }
