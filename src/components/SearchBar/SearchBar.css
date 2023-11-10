@@ -1,0 +1,32 @@
+.search-bar {
+  display: flex;
+  max-height: 40px;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 20px;
+}
+
+.search-bar__field {
+  background: transparent;
+  border: none;
+  padding: 20px;
+  color: white;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.search-bar__button {
+  max-height: 50px;
+  background-color: transparent;
+  align-items: center;
+  border: none;
+}
+
+.search-bar__icon {
+  max-width: 40px;
+  max-height: 40px;
+  align-self: center;
+  cursor: pointer;
+}
