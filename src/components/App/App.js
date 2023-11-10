@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import AirConditions from '../AirConditions/AirConditions.js';
 import CurrentWeather from '../CurrentWeather/CurrentWeather.js';
-import DailyWeather from '../DailyWeather/DailyWeather.js';
 import SearchBar from '../SearchBar/SearchBar.js';
 import WeeklyWeather from '../WeeklyWeather/WeeklyWeather.js';
 import api from '../../utils/api.js';
@@ -21,7 +20,6 @@ export default function App() {
         <div className='container'>
           <SearchBar />
           <CurrentWeather />
-          <DailyWeather />
           <AirConditions />
         </div>
         <WeeklyWeather />

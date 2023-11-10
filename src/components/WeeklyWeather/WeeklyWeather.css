@@ -1,0 +1,31 @@
+.weekly-weather {}
+
+.weekly-weather__day {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  border-bottom: solid 1px;
+  border-color: rgba(255, 255, 255, .1);
+  margin: 5px 0 5px 0;
+}
+
+.weekly-weather__week-day {
+  font-size: 24px;
+  width: 40px;
+  opacity: .5;
+}
+
+.weekly-weather__icon-condition {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.weekly-weather__condition {
+  font-size: 18px;
+  opacity: .5;
+}
+
+.weekly-weather__temperature {
+  opacity: .5;
+}
