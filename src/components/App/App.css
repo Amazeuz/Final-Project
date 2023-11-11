@@ -1,14 +1,12 @@
 html {
-  background-color: rgb(51, 51, 90);
+  background: linear-gradient(#4737d6, #5A91C7);
+  height: 100%;
+  width: 100%;
 }
 
 .page {
   display: flex;
   color: white;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }

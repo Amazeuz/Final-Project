@@ -1,6 +1,11 @@
-.weekly-weather {}
+.weekly-weather {
+  width: 30%;
+  height: 100%;
+}
 
 .weekly-weather__day {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,12 +13,13 @@
   border-bottom: solid 1px;
   border-color: rgba(255, 255, 255, .1);
   margin: 5px 0 5px 0;
+  justify-content: space-around;
 }
 
 .weekly-weather__week-day {
+  max-height: 10%;
   font-size: 24px;
   width: 40px;
-  opacity: .5;
 }
 
 .weekly-weather__icon-condition {
@@ -21,11 +27,15 @@
   max-height: 50px;
 }
 
-.weekly-weather__condition {
+.weekly-weather__description {
+  width: 15%;
   font-size: 18px;
-  opacity: .5;
 }
 
-.weekly-weather__temperature {
-  opacity: .5;
+.weekly-weather__temperature {}
+
+@media screen and (max-width: 894px) {
+  .weekly-weather {
+    width: unset;
+  }
 }

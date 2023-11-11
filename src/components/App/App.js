@@ -1,8 +1,5 @@
 import { useState, useEffect } from 'react';
-import AirConditions from '../AirConditions/AirConditions.js';
-import CurrentWeather from '../CurrentWeather/CurrentWeather.js';
-import SearchBar from '../SearchBar/SearchBar.js';
-import WeeklyWeather from '../WeeklyWeather/WeeklyWeather.js';
+import Main from '../Main/Main.js';
 import api from '../../utils/api.js';
 import city from '../../models/Itapema.js';
 import { CurrentCityContext } from '../../contexts/CurrentCityContext.js';
@@ -17,12 +14,7 @@ export default function App() {
   return (
     <CurrentCityContext.Provider value={currentCity}>
       <div className='page'>
-        <div className='container'>
-          <SearchBar />
-          <CurrentWeather />
-          <AirConditions />
-        </div>
-        <WeeklyWeather />
+        <Main />
       </div>
     </CurrentCityContext.Provider>
   )

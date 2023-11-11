@@ -1,6 +1,11 @@
 .current-weather {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgba(255, 255, 255, .1);
 }
 
 .current-weather__weather-condition {
@@ -11,7 +16,10 @@
 .current-weather__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  column-gap: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .current-weather__city-name {}
@@ -19,11 +27,5 @@
 .current-weather__temperature {
   font-size: 60px;
   margin: 0;
-  align-self: end;
-}
-
-.current-weather__moon-phase {
-  max-width: 100px;
-  max-height: 100px;
-  align-self: end;
+  text-align: center;
 }
