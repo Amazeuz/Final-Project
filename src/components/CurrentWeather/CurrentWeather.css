@@ -17,12 +17,15 @@
   display: flex;
   flex-direction: column;
   flex-direction: row;
-  column-gap: 100px;
+  column-gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
-.current-weather__city-name {}
+.current-weather__text {
+  margin: 0;
+}
 
 .current-weather__temperature {
   font-size: 60px;

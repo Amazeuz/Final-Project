@@ -31,3 +31,16 @@
 .day-condition__value {
   margin: 0 0 0 15px;
 }
+
+@media screen and (max-width: 600px) {
+  .day-condition {
+    row-gap: 30px;
+
+  }
+
+  .day-condition__sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

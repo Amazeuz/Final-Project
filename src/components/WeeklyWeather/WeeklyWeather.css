@@ -34,7 +34,7 @@
 
 .weekly-weather__temperature {}
 
-@media screen and (max-width: 894px) {
+@media screen and (max-width: 981px) {
   .weekly-weather {
     width: unset;
   }

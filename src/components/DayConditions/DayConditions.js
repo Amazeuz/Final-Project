@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CurrentCityContext } from '../../contexts/CurrentCityContext.js';
 import cloudIcon from '../../images/day-condition-icons/cloud-icon.svg'
 import humidityIcon from '../../images/day-condition-icons/humidity-icon.svg'
@@ -8,8 +8,12 @@ import sunriseIcon from '../../images/day-condition-icons/sunrise_icon.svg';
 import sunsetIcon from '../../images/day-condition-icons/sunset_icon.svg';
 import moonPhasesImages from "../../images/moon_phases/moonPhaseImagesExport.js";
 
-export default function AirConditions() {
+export default function DayConditions() {
   const currentCity = useContext(CurrentCityContext);
+  const [moonPhaseTranslation, setMoonPhaseTranslation] = useState('')
+
+  const moonPhases = ['first_quarter', 'full', 'last_quarter', 'new', 'waning_crescent', 'waning_gibbous', 'waxing_crescent', 'waxing_gibbous'];
+  const moonPhasesTranslations = ['Quarto crescente', 'Lua cheia', 'Quarto Minguante', 'Lua nova', 'Lua Minguante', 'Minguante Gibosa', 'Lua Crescente', 'Crescente Gibosa'];
 
   return (
     <div className="day-condition">
@@ -60,7 +64,7 @@ export default function AirConditions() {
           <img className="day-condition__icon" src={moonPhasesImages[currentCity.moon_phase]} />
           <p className="day-condition__text">Fase da lua</p>
         </div>
-        <h1 className="day-condition__value">{currentCity.moon_phase}</h1>
+        <h1 className="day-condition__value">{moonPhasesTranslations[moonPhases.indexOf(currentCity.moon_phase)]}</h1>
       </div>
     </div>
   )
