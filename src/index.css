@@ -1,4 +1,6 @@
 @import url(./vendor/normalize.css);
+@import url(./vendor/fonts/inter.css);
+@import url(./vendor/root.css);
 
 @import url(./components/DayConditions/DayConditions.css);
 @import url(./components/App/App.css);
