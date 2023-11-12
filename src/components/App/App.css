@@ -4,6 +4,7 @@ html {
 }
 
 .page {
+  row-gap: 20px;
   display: flex;
   color: white;
   justify-content: space-around;

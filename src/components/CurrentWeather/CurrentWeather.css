@@ -15,8 +15,6 @@
 
 .current-weather__container {
   display: flex;
-  flex-direction: column;
-  flex-direction: row;
   column-gap: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
