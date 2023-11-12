@@ -4,9 +4,15 @@ html {
 }
 
 .page {
-  row-gap: 20px;
+  row-gap: 5px;
   display: flex;
   color: white;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1025px) {
+  .page {
+    row-gap: 20px;
+  }
 }

@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 40px;
+  row-gap: 30px;
   border-right: solid 1px;
   border-color: rgba(255, 255, 255, .1);
 }
 
-@media screen and (max-width: 981px) {
+@media screen and (max-width: 1025px) {
   .container {
     border: none;
   }
