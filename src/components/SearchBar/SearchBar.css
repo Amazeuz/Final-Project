@@ -30,4 +30,9 @@
   max-height: 40px;
   align-self: center;
   cursor: pointer;
+  transition: opacity .4s;
+}
+
+.search-bar__icon:hover {
+  opacity: 0.5;
 }

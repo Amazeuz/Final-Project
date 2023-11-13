@@ -1,5 +1,19 @@
 .header {
   width: 100%;
+  padding: 0 40px 0 40px;
   height: 40px;
   background: linear-gradient(#4737d6, #7ca4cc);
+  display: flex;
+}
+
+.header__about-button {
+  cursor: pointer;
+  transition: opacity .4s;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.header__about-button:hover {
+  opacity: 0.5;
 }

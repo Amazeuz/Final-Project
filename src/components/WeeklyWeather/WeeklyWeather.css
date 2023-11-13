@@ -1,6 +1,5 @@
 .weekly-weather {
   width: 30%;
-
 }
 
 .weekly-weather__day {
@@ -13,6 +12,7 @@
   border-color: rgba(255, 255, 255, .1);
   margin: 5px 0 5px 0;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .weekly-weather__week-day {
@@ -38,5 +38,11 @@
 @media screen and (max-width: 1025px) {
   .weekly-weather {
     width: unset;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .weekly-weather__day {
+    column-gap: 5px;
   }
 }
