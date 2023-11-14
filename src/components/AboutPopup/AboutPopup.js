@@ -19,7 +19,7 @@ export default function AboutPopup({ setAboutPopupState }) {
         em matemática, e por isso, e diversos outros pontos, pretendo seguir
         minha vida trabalhando nessa área.
       </p>
-      <img className='about-popup__author-image' src={AuthorImage} />
+      <img className='about-popup__author-image' src={AuthorImage} alt="Imagem do autor do site" />
     </div>
   )
 }

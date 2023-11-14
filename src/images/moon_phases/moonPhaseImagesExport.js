@@ -1,11 +1,11 @@
-import firstQuarter from './first_quarter.png';
-import full from './full.png';
-import lastQuarter from './last_quarter.png';
-import newMoon from './new.png';
-import waningCrescent from './waning_crescent.png';
-import waningGibbous from './waning_gibbous.png';
-import waxingCrescent from './waxing_crescent.png';
-import waxingGibbous from './waxing_gibbous.png';
+import firstQuarter from './first_quarter.svg';
+import full from './full.svg';
+import lastQuarter from './last_quarter.svg';
+import newMoon from './new.svg';
+import waningCrescent from './waning_crescent.svg';
+import waningGibbous from './waning_gibbous.svg';
+import waxingCrescent from './waxing_crescent.svg';
+import waxingGibbous from './waxing_gibbous.svg';
 
 const moonPhasesImages = {
   'first_quarter': firstQuarter,

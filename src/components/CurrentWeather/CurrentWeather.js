@@ -16,7 +16,7 @@ export default function currentWeather() {
         {currentCity.currently === 'noite' && <MoonPhase />}
       </div>
       <div className="current-weather__container">
-        <img className="current-weather__weather-condition" src={climateImages[currentCity.condition]} />
+        <img className="current-weather__weather-condition" src={climateImages[currentCity.condition]} alt="Imagem representando a condição do tempo" />
         <h2 className="current-weather__text">{currentCity.description}</h2>
       </div>
     </div>
