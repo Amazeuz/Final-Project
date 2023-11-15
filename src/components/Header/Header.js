@@ -24,7 +24,7 @@ export default function Header({ setAboutPopupState }) {
     <div className="header">
       <button className="header__about-button" onClick={toggleAboutPopupState}>Sobre o autor</button>
       <button className="header__about-button" onClick={isApiPage ? redirectToMain : redirectToApi}>
-        {isApiPage ? 'Voltar a página inicial' : 'Visualizar dados da API'}
+        {isApiPage ? 'Voltar á página inicial' : 'Visualizar dados da API'}
       </button>
     </div>
   )

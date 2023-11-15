@@ -7,6 +7,7 @@
 }
 
 .search-bar__field {
+  width: 20vw;
   background: transparent;
   border: none;
   padding: 20px;

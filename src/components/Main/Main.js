@@ -7,10 +7,12 @@ export default function Main({ searchCity }) {
   return (
     <>
       <div className='container'>
-        <CurrentWeather searchCity={searchCity} />
-        <DayConditions />
+        <div className='container__sub-container'>
+          <CurrentWeather searchCity={searchCity} />
+          <DayConditions />
+        </div>
+        <WeeklyWeather />
       </div>
-      <WeeklyWeather />
     </>
   )
 }

@@ -12,13 +12,13 @@ html {
   row-gap: 5px;
   display: flex;
   color: white;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .page_overlay {
   width: 100%;
-  opacity: 0.4;
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 1025px) {
