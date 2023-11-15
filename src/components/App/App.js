@@ -11,19 +11,19 @@ export default function App() {
   const [currentCity, setCurrentCity] = useState(defaultCity);
   const [isAboutPopupOpen, setAboutPopupState] = useState(false)
 
-  useEffect(() => {
-    api.getCityInfo('Itapema')
+  function searchCity(city) {
+    api.getCityInfo(city)
       .then((data) => {
         setCurrentCity(data)
       })
-  }, [])
+  }
 
   return (
     <CurrentCityContext.Provider value={currentCity}>
       {isAboutPopupOpen && <AboutPopup setAboutPopupState={setAboutPopupState} />}
       <div className={`page ${isAboutPopupOpen && 'page_overlay'}`}>
         <Header setAboutPopupState={setAboutPopupState} />
-        <Main />
+        <Main searchCity={searchCity} />
         <Footer />
       </div>
     </CurrentCityContext.Provider>

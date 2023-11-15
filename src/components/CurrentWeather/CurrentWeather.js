@@ -4,12 +4,12 @@ import climateImages from "../../images/climates/climatesImageExport.js";
 import SearchBar from '../SearchBar/SearchBar.js';
 import MoonPhase from "../MoonPhase/MoonPhase.js";
 
-export default function currentWeather() {
+export default function currentWeather({ searchCity }) {
   const currentCity = useContext(CurrentCityContext);
 
   return (
     <div className="current-weather">
-      <SearchBar />
+      <SearchBar searchCity={searchCity} />
       <h1 className="current-weather__text">{currentCity.results?.city}</h1>
       <div className="current-weather__container">
         <p className="current-weather__temperature">{currentCity.results?.temp}&#8451;</p>

@@ -17,7 +17,6 @@ class Api {
   }
 }
 
-
 const api = new Api({
   baseUrl: "https://api.hgbrasil.com",
   key: process.env.REACT_APP_API_KEY
