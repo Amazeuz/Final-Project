@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 import Header from '../Header/Header.js';
+import ApiData from '../ApiData/ApiData.js';
 import Main from '../Main/Main.js';
 import Footer from '../Footer/Footer.js';
 import AboutPopup from '../AboutPopup/AboutPopup.js';
@@ -22,9 +24,18 @@ export default function App() {
     <CurrentCityContext.Provider value={currentCity}>
       {isAboutPopupOpen && <AboutPopup setAboutPopupState={setAboutPopupState} />}
       <div className={`page ${isAboutPopupOpen && 'page_overlay'}`}>
-        <Header setAboutPopupState={setAboutPopupState} />
-        <Main searchCity={searchCity} />
-        <Footer />
+        <HashRouter>
+          <Header setAboutPopupState={setAboutPopupState} />
+          <Switch>
+            <Route exact path="/">
+              <Main searchCity={searchCity} />
+            </Route>
+            <Route path="/api">
+              <ApiData />
+            </Route>
+          </Switch>
+          <Footer />
+        </HashRouter>
       </div>
     </CurrentCityContext.Provider>
   )

@@ -1,0 +1,14 @@
+.api-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.api-data__title {
+  align-self: center;
+  text-align: center;
+}
+
+.api-data__data {
+  align-self: left;
+  font-size: 12px;
+}

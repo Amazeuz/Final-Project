@@ -16,9 +16,11 @@ Para cada clima é mostrado um ícone específico representando o clima, o mesmo
 
 O aplicativo também possúi um popup "Sobre o autor", que contém informações sobre o autor do aplicativo.
 
-A API usada e seus métodos:
+A API usada: https://api.hgbrasil.com
 
-- 
+A API fornece informações de clima-tempo das cidades do Brasil, 
+além de diversas outras informações sobre as cidades que não foram utilizados no aplicativo.
+
 Link do aplicativo:
 https://amazeuz.github.io/weather-app/
 
