@@ -19,5 +19,7 @@ O aplicativo também possúi um popup "Sobre o autor", que contém informações
 A API usada e seus métodos:
 
 - 
+Link do aplicativo:
+https://amazeuz.github.io/weather-app/
 
 Vídeo no youtube mostrando a funcionalidade do aplicativo: 

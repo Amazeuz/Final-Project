@@ -10,8 +10,8 @@ export default function MoonPhase() {
 
   return (
     <div className="moon-phase">
-      <img className="moon-phase__moon-icon" src={moonPhasesImages[currentCity.moon_phase]} alt="Imagem representando a fase da lua" />
-      <h1 className="moon-phase__text">{moonPhasesTranslations[moonPhases.indexOf(currentCity.moon_phase)]}</h1>
+      <img className="moon-phase__moon-icon" src={moonPhasesImages[currentCity.results?.moon_phase]} alt="Imagem representando a fase da lua" />
+      <h1 className="moon-phase__text">{moonPhasesTranslations[moonPhases.indexOf(currentCity.results?.moon_phase)]}</h1>
     </div>
   )
 }

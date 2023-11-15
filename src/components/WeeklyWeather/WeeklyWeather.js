@@ -7,7 +7,7 @@ export default function WeeklyWeather() {
 
   return (
     <div className="weekly-weather">
-      {currentCity.forecast?.map((day, i) => (
+      {currentCity.results?.forecast?.map((day, i) => (
         <div className="weekly-weather__day" key={i}>
           <h1 className="weekly-weather__week-day">{day.weekday}</h1>
           <img className="weekly-weather__icon-condition" src={clearDay} alt="Imagem representando a condição do tempo" />

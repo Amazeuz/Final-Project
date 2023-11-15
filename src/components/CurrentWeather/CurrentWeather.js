@@ -10,14 +10,14 @@ export default function currentWeather() {
   return (
     <div className="current-weather">
       <SearchBar />
-      <h1 className="current-weather__text">{currentCity.city}</h1>
+      <h1 className="current-weather__text">{currentCity.results?.city}</h1>
       <div className="current-weather__container">
-        <p className="current-weather__temperature">{currentCity.temp}&#8451;</p>
-        {currentCity.currently === 'noite' && <MoonPhase />}
+        <p className="current-weather__temperature">{currentCity.results?.temp}&#8451;</p>
+        {currentCity.results?.currently === 'noite' && <MoonPhase />}
       </div>
       <div className="current-weather__container">
-        <img className="current-weather__weather-condition" src={climateImages[currentCity.condition]} alt="Imagem representando a condição do tempo" />
-        <h2 className="current-weather__text">{currentCity.description}</h2>
+        <img className="current-weather__weather-condition" src={climateImages[currentCity.results?.condition_slug]} alt="Imagem representando a condição do tempo" />
+        <h2 className="current-weather__text">{currentCity.results?.description}</h2>
       </div>
     </div>
   )

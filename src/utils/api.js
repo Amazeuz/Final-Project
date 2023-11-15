@@ -1,13 +1,11 @@
 class Api {
   constructor(options) {
     this._baseUrl = options.baseUrl
+    this._key = options.key
   }
   getCityInfo(city) {
-    return fetch(`${'https://api.hgbrasil.com'}/weather?city_name=${city}`, {
-      method: 'GET'
-    })
+    return fetch(`${this._baseUrl}/weather?format=json-cors&key=${this._key}&city_name=${city}`)
       .then((res) => {
-        console.log(res)
         if (res.ok) {
           return res.json();
         }
@@ -17,11 +15,12 @@ class Api {
         console.log("Erro. A solicitação falhou: ", err);
       })
   }
-
 }
+
 
 const api = new Api({
   baseUrl: "https://api.hgbrasil.com",
+  key: process.env.REACT_APP_API_KEY
 });
 
 export default api;
