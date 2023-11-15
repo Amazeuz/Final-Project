@@ -16,6 +16,8 @@ Para cada clima é mostrado um ícone específico representando o clima, o mesmo
 
 O aplicativo também possúi um popup "Sobre o autor", que contém informações sobre o autor do aplicativo.
 
+O aplicativo também é altamente responsivo, sendo adaptado para diferentes tamanhos de tela.
+
 A API usada: https://api.hgbrasil.com
 
 A API fornece informações de clima-tempo das cidades do Brasil, 

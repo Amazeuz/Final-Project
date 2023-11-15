@@ -4,11 +4,10 @@
 }
 
 .api-data__title {
-  align-self: center;
   text-align: center;
 }
 
 .api-data__data {
-  align-self: left;
+  align-self: center;
   font-size: 12px;
 }

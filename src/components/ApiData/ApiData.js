@@ -3,7 +3,6 @@ import { useContext } from "react";
 
 export default function ApiData() {
   const currentCity = useContext(CurrentCityContext)
-  console.log(currentCity)
 
   return (
     <div className="api-data">
