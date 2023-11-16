@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/weather-app/static/css/main.d8b7448e.css",
-    "main.js": "/weather-app/static/js/main.abc777d8.js",
+    "main.css": "/weather-app/static/css/main.dac756ff.css",
+    "main.js": "/weather-app/static/js/main.268174c9.js",
     "static/js/787.d9312eb8.chunk.js": "/weather-app/static/js/787.d9312eb8.chunk.js",
     "static/media/author-image.jpg": "/weather-app/static/media/author-image.6767868f76176c285f90.jpg",
     "static/media/Inter-SemiBoldItalic.woff?v=3.19": "/weather-app/static/media/Inter-SemiBoldItalic.463bdbfb28abad0fa6df.woff",
@@ -40,18 +40,18 @@
     "static/media/fog.svg": "/weather-app/static/media/fog.44800cc711820a5adb35b9222781eae6.svg",
     "static/media/sunrise_icon.svg": "/weather-app/static/media/sunrise_icon.318da9362ec66e2c0f5fe30540cc9e03.svg",
     "index.html": "/weather-app/index.html",
+    "static/media/error-icon.svg": "/weather-app/static/media/error-icon.d4ce2a261b68c6da973d51ef98afae1a.svg",
     "static/media/clear_day.svg": "/weather-app/static/media/clear_day.a552eb1fa9bdd2c888428daf0af8492a.svg",
     "static/media/none_day.svg": "/weather-app/static/media/none_day.a552eb1fa9bdd2c888428daf0af8492a.svg",
-    "static/media/error-icon.svg": "/weather-app/static/media/error-icon.df8eddf661ff88f2d0efd3d570d14309.svg",
     "static/media/clear_night.svg": "/weather-app/static/media/clear_night.7e8ac86bde2b4a93763919350341bea6.svg",
     "static/media/none_night.svg": "/weather-app/static/media/none_night.7e8ac86bde2b4a93763919350341bea6.svg",
     "static/media/exit-icon.svg": "/weather-app/static/media/exit-icon.3d5ccb3c06264dd8a878a5a42f52d09e.svg",
-    "main.d8b7448e.css.map": "/weather-app/static/css/main.d8b7448e.css.map",
-    "main.abc777d8.js.map": "/weather-app/static/js/main.abc777d8.js.map",
+    "main.dac756ff.css.map": "/weather-app/static/css/main.dac756ff.css.map",
+    "main.268174c9.js.map": "/weather-app/static/js/main.268174c9.js.map",
     "787.d9312eb8.chunk.js.map": "/weather-app/static/js/787.d9312eb8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8b7448e.css",
-    "static/js/main.abc777d8.js"
+    "static/css/main.dac756ff.css",
+    "static/js/main.268174c9.js"
   ]
 }
