@@ -26,4 +26,5 @@ além de diversas outras informações sobre as cidades que não foram utilizado
 Link do aplicativo:
 https://amazeuz.github.io/weather-app/
 
-Vídeo no youtube mostrando a funcionalidade do aplicativo: 
+Vídeo no youtube mostrando a funcionalidade do aplicativo:
+https://youtu.be/mAQM0bB1coA
