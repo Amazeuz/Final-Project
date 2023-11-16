@@ -20,7 +20,7 @@ export default function App() {
     setPageLoaded(false)
     await api.getCityInfo(city)
       .then((data) => {
-        if (data.valid_keys === false) {
+        if (data.by === "default") {
           setErrorPopupState(true)
         }
         else {
