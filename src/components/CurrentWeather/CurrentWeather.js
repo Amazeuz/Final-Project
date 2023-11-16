@@ -4,7 +4,7 @@ import climateImages from "../../images/climates/climatesImageExport.js";
 import SearchBar from '../SearchBar/SearchBar.js';
 import MoonPhase from "../MoonPhase/MoonPhase.js";
 
-export default function currentWeather({ searchCity }) {
+export default function CurrentWeather({ searchCity }) {
   const currentCity = useContext(CurrentCityContext);
 
   return (

@@ -6,25 +6,30 @@ import Main from '../Main/Main.js';
 import Footer from '../Footer/Footer.js';
 import PreLoader from '../PreLoader/PreLoader.js';
 import AboutPopup from '../AboutPopup/AboutPopup.js';
-import defaultCity from '../../utils/defaultCity.js';
+import ErrorPopup from '../ErrorPopup/ErrorPopup.js';
 import api from '../../utils/api.js';
 import { CurrentCityContext } from '../../contexts/CurrentCityContext.js';
 
 export default function App() {
-  const [currentCity, setCurrentCity] = useState(defaultCity);
+  const [currentCity, setCurrentCity] = useState('');
   const [isAboutPopupOpen, setAboutPopupState] = useState(false);
   const [isPageLoaded, setPageLoaded] = useState(true);
+  const [errorPopupState, setErrorPopupState] = useState(false)
 
-
-  /*useEffect(() => {
+  useEffect(() => {
     searchCity('São Paulo')
-  }, [])*/
+  }, [])
 
   async function searchCity(city) {
     setPageLoaded(false)
     await api.getCityInfo(city)
       .then((data) => {
-        setCurrentCity(data)
+        if (data.by === "default") {
+          setErrorPopupState(true)
+        }
+        else {
+          setCurrentCity(data)
+        }
       })
     setPageLoaded(true)
   }
@@ -33,6 +38,7 @@ export default function App() {
     <CurrentCityContext.Provider value={currentCity}>
       {isAboutPopupOpen && <AboutPopup setAboutPopupState={setAboutPopupState} />}
       {!isPageLoaded && <PreLoader />}
+      {errorPopupState && <ErrorPopup setErrorPopupState={setErrorPopupState} />}
       <div className={`page ${isAboutPopupOpen | !isPageLoaded && 'page_overlay'}`}>
         <HashRouter>
           <Header setAboutPopupState={setAboutPopupState} />

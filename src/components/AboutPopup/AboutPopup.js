@@ -15,7 +15,7 @@ export default function AboutPopup({ setAboutPopupState }) {
         Sempre gostei muito de coisas que envolvam lógicas complexas,
         sempre me dei bem com matemática na escola, e sinto que programação
         é muito semelhante á matemática em alguns aspectos, como por exemplo, a sensação de
-        corrigir um bug em um programa é muito parecida com resolvar uma conta
+        corrigir um bug em um programa é muito parecida com resolvar uma conta complexa
         em matemática, e por isso, e diversos outros pontos, pretendo seguir
         minha vida trabalhando nessa área.
       </p>
