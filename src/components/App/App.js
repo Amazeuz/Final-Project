@@ -16,15 +16,11 @@ export default function App() {
   const [isPageLoaded, setPageLoaded] = useState(true);
   const [errorPopupState, setErrorPopupState] = useState(false)
 
-  useEffect(() => {
-    searchCity('São Paulo')
-  }, [])
-
   async function searchCity(city) {
     setPageLoaded(false)
     await api.getCityInfo(city)
       .then((data) => {
-        if (data.by === "default") {
+        if (data.valid_keys === false) {
           setErrorPopupState(true)
         }
         else {
@@ -33,6 +29,10 @@ export default function App() {
       })
     setPageLoaded(true)
   }
+
+  useEffect(() => {
+    searchCity('São Paulo')
+  }, [])
 
   return (
     <CurrentCityContext.Provider value={currentCity}>
