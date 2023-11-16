@@ -1,0 +1,51 @@
+.error-popup {
+  background-color: white;
+  max-width: 360px;
+  max-height: 300px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid 1px black;
+  border-radius: 4px;
+}
+
+.error-popup__exit-icon {
+  max-width: 40px;
+  max-height: 40px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  cursor: pointer;
+  transition: opacity .4s;
+}
+
+.error-popup__icon {
+  max-width: 100px;
+  align-self: center;
+}
+
+.error-popup__text {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media screen and (max-width: 458px) {
+  .error-popup {
+    width: 80%;
+  }
+
+  .error-popup__icon {
+    max-width: 80px;
+  }
+
+  .error-popup__exit-icon {
+    right: -25px;
+  }
+}

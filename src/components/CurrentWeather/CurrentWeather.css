@@ -1,0 +1,32 @@
+.current-weather {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: solid 1px;
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.current-weather__weather-condition {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.current-weather__container {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.current-weather__text {
+  margin: 0;
+}
+
+.current-weather__temperature {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+}
