@@ -18,7 +18,7 @@ O aplicativo também possúi um popup "Sobre o autor", que contém informações
 
 O aplicativo também é altamente responsivo, sendo adaptado para diferentes tamanhos de tela.
 
-A API usada: https://api.hgbrasil.com
+A API usada: https://api.hgbrasil.com 
 
 A API fornece informações de clima-tempo das cidades do Brasil, 
 além de diversas outras informações sobre as cidades que não foram utilizados no aplicativo.
