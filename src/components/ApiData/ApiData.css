@@ -1,0 +1,13 @@
+.api-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.api-data__title {
+  text-align: center;
+}
+
+.api-data__data {
+  align-self: center;
+  font-size: 12px;
+}
